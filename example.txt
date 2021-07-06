@@ -1,0 +1,13 @@
+Here, we use float to indicate the expected types of latitude and longitude. This is
+merely informative for the reader of the function so that they can get an idea of these
+expected types. Python will not check these types nor enforce them.
+We can also specify the expected type of the returned value of the function. In this
+case, Point is a user-defined class, so it will mean that whatever is returned will be
+an instance of Point.
+However, types or built-ins are not the only kind of thing we can use as annotations.
+Basically, everything that is valid in the scope of the current Python interpreter
+could be placed there. For example, a string explaining the intention of the variable,
+a callable to be used as a callback or validation function, and so on.
+We can leverage annotations to make our code more expressive. Consider the
+following example for a function that is supposed to launch a task, but that also
+accepts a parameter to defer the execution:
